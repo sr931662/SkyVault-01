@@ -1,0 +1,108 @@
+<%- include ("includes/header") %>
+<div class="background" style="position: absolute; z-index: -1;"></div>
+
+<div id="homeApp">
+    <div class="container" id="features">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 style="z-index: 5; color: rgb(61 69 114); font-size: 120px; margin: 150px 0 100px 0;">Welcome to <strong class="company-main">SkyVault</strong></h1>
+                <!-- <p>Node JS and Mongo DB</p> -->
+                <h3 style="margin-top: 40px; color: rgb(255 226 212); margin-bottom: 100px;">Unleash the power of seamless file sharing with <strong>SkyVault</strong>. Whether you're collaborating with colleagues, sharing memories with friends, or storing important documents securely, we've got you covered.</h3>
+                <a v-bind:href="mainURL + '/MyUploads'" class="gst" style="z-index: 5; text-transform: uppercase; font-size: 40px;">Get Started</a>
+                <!-- <img src="../public/img/down-chevron.png" alt="" style="z-index: 10; width: 128px; height: 128px;"/> -->
+                <div class="down"></div>
+            </div>
+        </div>
+    </div>
+    <div class="blur-overlay" style="z-index: -1;"></div>
+    
+    <div class="container">
+        <div class="container text-center" style="margin-top: 100px;">
+            <div class="row">
+              <div class="col">
+                <div class="card gcard">
+                    <img src="./img/cloud-server.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Store and access anywhere</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card gcard">
+                    <img src="./img/link copy.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="margin-top: -10px;">
+                      <p class="card-text">Generate links & share with others</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card gcard">
+                    <img src="./img/locked.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="margin-top: -10px;">
+                      <p class="card-text">Safe and Secure</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card gcard">
+                    <img src="./img/tag.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="margin-top: -10px;">
+                      <p class="card-text">Free of cost</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card gcard">
+                    <img src="./img/download.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="margin-top: -10px;">
+                      <p class="card-text">Download from anywhere</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card gcard" >
+                    <img src="./img/blockchain.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="margin-top: -10px;">
+                      <p class="card-text">Blockchain integration soon.....</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+
+        </div>
+        
+
+        <div class="main" style="margin: 200px;">
+          <h1>Why Choose Us?</h1>
+          
+          <h2 class="why-header">simplicity</h2>
+          <h3 class="why">Our user-friendly interface makes sharing files a breeze, even for beginners.</h3>
+
+          <h2 class="why-header">security</h2>
+          <h3 class="why">Rest easy knowing your files are protected with state-of-the-art encryption and secure access controls.</h3>
+          
+          <h2 class="why-header">flexibility</h2>
+          <h3 class="why">Access your files from any device, anywhere, at any time.</h3>
+          
+          <h2 class="why-header">collaboration</h2>
+          <h3 class="why">Work together in real-time with colleagues, friends, and family members on shared documents and projects.</h3>
+          
+          <h2 class="why-header">customization</h2>
+          <h3 class="why">Tailor your sharing experience with customizable privacy settings and branding options.</h3>
+        </div>
+    </div>
+</div>
+
+<script>
+    const homeApp = Vue.createApp({
+        data() {
+          return {
+              mainURL: baseUrl,
+          }
+        }
+    });
+    homeApp.mount("#homeApp");
+</script>
+
+<%- include ("includes/footer") %>
